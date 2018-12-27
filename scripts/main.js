@@ -1,11 +1,12 @@
-var currentImg = document.querySelector('img');
 
-currentImg.onclick = function () {
-    var imgSrc = currentImg.getAttribute('src'); //fetches the source of the image clicked
 
-    if (imgSrc === "images/sheep.png") { // check to see if sheep
-        currentImg.setAttribute('src', 'images/pig.png'); //change to pig
+var myImage = document.querySelector('img');
+
+myImage.onclick = function() {
+    var mySrc = myImage.getAttribute('src');
+    if(mySrc === 'images/sheep.png') {
+      myImage.setAttribute ('src','images/pig.png');
     } else {
-        currentImg.setAttribute('src', 'images/sheep.png'); // or back to sheep
+      myImage.setAttribute ('src','images/sheep.png');
     }
 }
